@@ -60,7 +60,7 @@ struct CalculatorModel {
         
     }
     
-    
+    // branch A commit
     var resultValue : Double?{
         get{
             return accumulateVar
