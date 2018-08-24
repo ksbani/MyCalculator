@@ -19,7 +19,7 @@ struct CalculatorModel {
         case Equals
     }
     
-    
+//MARK: - functionalTable method
     private var functionalTable : Dictionary <String,OperationType> = [
         "π" : OperationType.constant(M_PI),
         "√" : OperationType.Unary(sqrt),
