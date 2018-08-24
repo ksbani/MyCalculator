@@ -19,7 +19,7 @@ struct CalculatorModel {
         case Equals
     }
     
-//MARK: - functionalTable method
+//MARK: - functionalTable Dictionary
     private var functionalTable : Dictionary <String,OperationType> = [
         "π" : OperationType.constant(M_PI),
         "√" : OperationType.Unary(sqrt),
@@ -31,7 +31,8 @@ struct CalculatorModel {
         "=": OperationType.Equals
         
     ]
-    
+
+//MARK: - setOperand function
     mutating func setOperand(_ operand : Double)  {
         accumulateVar = operand
     }
