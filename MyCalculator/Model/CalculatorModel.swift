@@ -37,6 +37,7 @@ struct CalculatorModel {
         accumulateVar = operand
     }
     
+//MARK: - performOperation func
     mutating func performOperation(_ operation:String){
         if let operationValue = functionalTable[operation]{
             switch operationValue {
